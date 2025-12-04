@@ -1,0 +1,18 @@
+{
+  "prompt": "Hello from Serverless ComfyUI!",
+  "steps": [
+    {
+      "type": "load_checkpoint",
+      "name": "checkpoint",
+      "path": "/workspace/models/checkpoints/v1-5-pruned-emaonly.safetensors"
+    },
+    {
+      "type": "txt2img",
+      "prompt_key": "prompt",
+      "width": 512,
+      "height": 512,
+      "seed": 12345,
+      "steps": 20
+    }
+  ]
+}
